@@ -1,0 +1,491 @@
+html{
+  height: 100%;
+  min-width: 320px;
+}
+
+body{
+  min-height: 100%;
+  position: relative;
+  background: url(../img/pic/pattern-basic.png) repeat;
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.wrapper{
+  padding-bottom: 120px;
+}
+
+input, select{
+  outline: none;
+}
+
+/* Header */
+
+header{
+  padding-top: 20px;
+}
+
+header .header__logo{
+  padding-bottom: 20px;
+}
+
+header .header__info{
+  text-align: right;
+}
+
+.header__border-top{
+  height: 10px;
+  width: 100%;
+  background: #737373; /* Old browsers */
+  background: -moz-linear-gradient(top,  #AAAAAB 1%, #737373 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #AAAAAB 1%,#737373 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #AAAAAB 1%,#737373 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#AAAAAB', endColorstr='#737373',GradientType=0 ); /* IE6-9 */
+}
+
+.header__nav{
+  background-color: #0AAC0A;
+}
+
+.header__nav .breadcrumb{
+  background-color: transparent;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.header__nav .breadcrumb > li > a{
+  color: #fff;
+  font-size: 18px;
+}
+
+.header__nav .breadcrumb > li:first-child{ padding-right: 20px;}
+
+.breadcrumb>li+li{
+  position: relative;
+  padding-left: 35px;
+  font-weight: bold;
+}
+
+.breadcrumb>li+li:before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/icon.png);
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+
+/* Footer */
+
+footer .footer__nav > ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+footer .footer__nav > ul > li{
+  display: inline-block;
+  border-right: 1px solid  #747474;
+}
+
+footer .footer__nav > ul > li:last-child{ border-right: none;}
+
+footer .footer__nav > ul > li > a{
+  color: #747474;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+footer .footer__nav > ul > li:last-child > a{ padding-right: 0;}
+footer .footer__nav > ul > li:first-child > a{ padding-left: 0;}
+
+footer .footer__social{
+  text-align: right;
+}
+
+footer .footer__social > img{
+  margin-right: 10px;
+}
+
+footer .footer__social > img:last-child{ margin-right: 0;}
+
+.footer__info{
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* main */
+
+.content{
+  margin-top: 30px;
+}
+
+.content > ul{
+  margin-right: 15px;
+  border-bottom: none;
+}
+
+.nav-tabs > li{
+  float: right;
+  margin-bottom: -2px;
+}
+
+
+.tab-content{
+  border: 1px solid  #DEDEDE;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.tab-pane{
+  background-color: #fff;
+  padding: 20px;
+}
+
+.nav-tabs > li > a{
+  border: 1px solid #DEDEDE;
+  border-bottom: none;
+  border-radius: 2px 2px 0 0;
+  background-color: #EEEEEE;
+  color: #444444;
+  font-weight: bold;
+}
+
+.smb__banner, .enterprise__banner{
+  background: url(../img/pic/Annual_DP_Report_2013_header_LP.png) no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  text-align: center;
+}
+
+.smb__banner > h1, .enterprise__banner > h1{
+  padding-top: 70px;
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.smb__banner > h1 > span, .enterprise__banner > h1 > span{
+  color: #FFEC00;
+}
+
+.smb__banner > p, .enterprise__banner > p{
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 0;
+  padding-bottom: 30px;
+}
+
+.smb__content-info, .enterprise__content-info{
+  margin-top: 50px;
+}
+
+.smb__content-info > h2, .enterprise__content-info > h2{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.enterprise__content-info > h2:nth-of-type(2){
+  margin-bottom: 30px;
+}
+
+.smb__content-info > .under-title{
+  font-weight: bold;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.smb__content-info > .under-title + p{
+  padding-bottom: 10px;
+}
+
+.enterprise__content-info-list > p{
+  padding-bottom: 10px;
+  padding-left: 30px;
+}
+
+.enterprise__content-info-list{
+  display: inline-block;
+  vertical-align: top;
+  width: 69%;
+  margin-bottom: 40px;
+}
+
+.smb__content-info ul{
+  list-style-type: square;
+  display: inline-block;
+  vertical-align: top;
+  width: 69%;
+  padding-bottom: 40px;
+}
+
+.enterprise__content-info ul{
+  list-style-type: square;
+  padding-bottom: 40px;
+}
+
+.smb__content-info ul > li, .enterprise__content-info > ul > li{
+  line-height: 24px;
+}
+
+
+.smb__content-info > .img-video-skin{
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  position: relative;
+}
+
+.enterprise__content-info > .img-video-skin{
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+  position: relative;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.smb__content-info > .img-video-skin > .img-video__link{
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.enterprise__content-info > .img-video-skin > .img-video__link{
+  bottom: -30px;
+  position: absolute;
+  left: 0;
+}
+
+.smb__content-info > .img-video-skin > .img-video__link > a > img{
+  width: 120%;
+}
+
+.enterprise__content-info > .img-video-skin > .img-video__link > a > img{
+  width: 110%;
+}
+
+
+.smb__content-info > .img-video-skin > img, .enterprise__content-info > .img-video-skin > img{
+  width: 100%;
+}
+
+.enterprise__content-info-download{
+  padding-left: 20px;
+}
+
+.enterprise__content-info-download > a{
+  color: #444;
+  font-weight: bold;
+}
+
+
+.smb__content-info-Infographics > p{
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.smb__content-info-Infographics > img{
+  width: 30%;
+  margin-right: 40px;
+  margin-bottom: 20px;
+}
+
+.smb__content-info-Infographics > a{
+  float: left;
+}
+
+.content-form{
+  background-color: #fff;
+  padding: 9px 0;
+  border: 2px solid #F4F4F4;
+  margin-top: 30px;
+}
+
+.content-form:after, .content-form:before{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.content-form > form{
+  width: 96%;
+  margin: auto;
+  background-color: #F4F4F4;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+form > .form-title{
+  text-align: center;
+  color: #349214;
+  font-size: 20px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+form > .field{
+  clear:both;
+  text-align:right;
+}
+
+form > .field > label{
+  float: left;
+  padding-right: 10px;
+  color: #444;
+  margin-bottom: 0;
+}
+
+form > .field > label > span{
+  color: #E10019;
+  font-size: 19px;
+}
+
+form > .field > input, select{
+  width: 60%;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  border: 1px solid  #D9D9DC;
+}
+
+#enterprise-hidden-select, #smb-hidden-select{
+  display: none;
+}
+
+form > .field > input{
+  padding-left: 5px;
+}
+
+form > .field > select{
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.form-btn{
+  width: 120px;
+  margin: 0 auto;
+}
+
+.form-btn > input[type=submit]{
+  width: 100%;
+  margin: 0 auto;
+  background-color: #27AE2F;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 40px;
+  margin-top: 30px;
+  -webkit-box-shadow: 0 3px 6px -2px #000;
+  box-shadow: 0 3px 6px -2px #000;
+}
+
+.form-btn > input[type=submit]:hover{
+  background-color: transparent;
+  color: #27AE2F;
+  border: 1px solid #27AE2F;
+}
+
+/**/
+
+@media (min-width: 521px) and (max-width: 767px){
+  footer .footer__social{
+    text-align: center;
+  }
+
+  .footer__nav{
+    text-align: center;
+  }
+
+  .wrapper{
+    padding-bottom: 135px;
+  }
+
+  .smb__content-info-Infographics{
+    text-align: center;
+  }
+
+  header .header__info{
+    text-align: center;
+  }
+}
+
+@media (max-width: 520px){
+
+  .header__info > img{
+    width: 80%;
+  }
+
+  .smb__banner, .enterprise__banner{
+    background-position: center;
+  }
+
+  .enterprise__content-info > .img-video-skin{
+    width: 55%;
+  }
+
+  .enterprise__content-info{
+    text-align: center;
+  }
+
+  .enterprise__content-info-list{
+    width: 100%;
+  }
+
+  .enterprise__content-info ul{
+    text-align: justify;
+    padding-left: 10px;
+  }
+
+  .enterprise__content-info-download{
+    padding-left: 0;
+  }
+
+  form > .field > input, select{
+    display: block;
+    width: 100%;
+  }
+
+  footer .footer__social{
+    text-align: center;
+  }
+
+  .footer__nav{
+    text-align: center;
+  }
+
+  .wrapper{
+    padding-bottom: 160px;
+  }
+
+  .smb__content-info-Infographics{
+    text-align: center;
+  }
+
+  header .header__info{
+    text-align: center;
+  }
+
+  .smb__content-info > .img-video-skin{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .smb__content-info ul{
+    width: 100%;
+  }
+
+}
